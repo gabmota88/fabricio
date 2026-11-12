@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Classificador de Mensagens</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Classificador de Mensagens</h1>
+
+      <p>
+        Identifique possíveis tentativas de golpe
+        utilizando Bag of Words e KNN.
+      </p>
+    </header>
+
+    <main>
+
+      <section class="card">
+
+        <h2>Análise de texto</h2>
+
+        <label for="messageInput">
+          Digite ou cole sua mensagem:
+        </label>
+
+        <textarea
+          id="messageInput"
+          rows="7"
+          placeholder="Exemplo: Sua conta será bloqueada. Atualize seus dados imediatamente..."
+        ></textarea>
+
+        <button id="classifyButton">
+          Classificar mensagem
+        </button>
+
+      </section>
+
+      <section class="card">
+
+        <h2>Resultado da classificação</h2>
+
+        <div id="result" class="result">
+
+          <p>
+            Aguardando uma mensagem para análise.
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+
+      <p>
+        Projeto acadêmico de Processamento de
+        Linguagem Natural com TypeScript.
+      </p>
+
+      <p>
+        O resultado é uma estimativa e não garante
+        a identificação de todas as fraudes.
+      </p>
+
+    </footer>
+
+  </div>
+
+  <script
+    type="module"
+    src="/src/main.ts"
+  ></script>
+
+</body>
+
+</html>
